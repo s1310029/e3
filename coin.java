@@ -1,10 +1,14 @@
 import java.util.Random;
-
+import java.util.Scanner;
 public class coin{
     public static void main(String[] args){
 	Random r = new Random();
 	int count1 = 0;
-	
+	System.out.println("Who are you?");
+	System.out.print("> ");
+	Scanner scanner = new Scanner(System.in);
+	String str = scanner.next();
+	System.out.println("Hello, " + str + "!");
 	System.out.println("Tosing a coin...");
 	for(int i = 1; i <= 3; i++){
 	int randomValue = r.nextInt(2);
